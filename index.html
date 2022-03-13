@@ -1,13 +1,304 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="app/css/style.css">
-    <title>Gulp template</title>
+    <title>Finale</title>
 <body>
-  <h1>Gulp template</h1>
+  <nav>
+    <img src="app/assets/cheshire-county-hygiene-services.svg" alt="Logo">
+    <div>
+      <a href="">Features</a>
+      <a href="">About</a>
+      <a href="">Pricing</a>
+      <a href="">Reviews</a>
+      <a href="">Contact</a>
+    </div>
+  </nav>
+  <section class="get-started">
+    <div class="download">
+      <img src="app/assets/cheshire-county-hygiene-services.svg" alt="Logo">
+      <h1>Explained propriety of out perpetual to you</h1>
+      <p>Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety of out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
+      <button>Download</button>
+    </div>
+    <form>
+      <h2>Try Your <span>free</span> Trial Today</h2>
+      <span>Your details</span>
+      <input type="text" name="name" placeholder="First name">
+      <input type="text" name="surname" placeholder="Last name">
+      <input type="text" name="phone" placeholder="Phone number">
+      <span>Type of subscription</span>
+      <div class="radio-inputs">
+        <div class="radio-input">
+          <input type="radio" name="subscription" value="monthly">
+          <label for="monthly">Monthly</label>
+        </div>
+        <div class="radio-input">
+          <input type="radio" name="subscription" value="yearly">
+          <label for="yearly">Yearly</label>
+        </div>
+      </div>
+      <button>Get started</button>
+    </form>
+  </section>
+  <section class="social-media">
+    <div>
+      <h2>Social Media</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, blanditiis ullam dolores illum nemo.</p>
+    </div>
+    <div>
+      <a href=""><img src="app/assets/facebook.svg" alt="facebook"></a>
+      <a href=""><img src="app/assets/instagram.svg" alt="instagram"></a>
+      <a href=""><img src="app/assets/twitter.svg" alt="twitter"></a>
+      <a href=""><img src="app/assets/pinterest.svg" alt="pinterest"></a>
+      <a href=""><img src="app/assets/twitter.svg" alt="wifi?"></a>
+    </div>
+  </section>
+  <section id="tabs">
+        <div class="buttons">
+          <button onclick="changeHeader(event, `pirmas`)"><span>Register</span></button>
+          <button onclick="changeHeader(event, `antras`)"><span>Apply</span></button>
+          <button onclick="changeHeader(event, `trecias`)"><span>Receive</span></button>
+        </div>
+        <div id="pirmas" class="tab">
+          <!-- <h2>Pirmas</h2> -->
+          <div class="text">
+            <h2>Tabs with soft transitioning effect. Explained propiety of out perpetual his you.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quisquam eius facilis, error ab dolorum unde,
+              officia repudiandae odit assumenda totam reprehenderit eveniet iusto consectetur perferendis dicta fugit?
+              Consequatur, esse.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit ratione dolorem veniam assumenda aperiam ab.</p>
+          </div>
+          <div class="images">
+            <div>
+              <img src="../app/assets/salad.png" alt="salad">
+              <img src="../app/assets/kale.png" alt="kale">
+            </div>
+            <div>
+              <img src="../app/assets/stairs.png" alt="stairs">
+            </div>
+          </div>
+        </div>
+        <div id="antras" class="tab">
+          <!-- <h2>Antras</h2> -->
+          <div class="text">
+            <h2>Tabs with soft transitioning effect. Explained propiety of out perpetual his you.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quisquam eius facilis, error ab dolorum unde,
+              officia repudiandae odit assumenda totam reprehenderit eveniet iusto consectetur perferendis dicta fugit?
+              Consequatur, esse.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit ratione dolorem veniam assumenda aperiam ab.</p>
+          </div>
+          <div class="images">
+            <div>
+              <img src="../app/assets/salad.png" alt="salad">
+              <img src="../app/assets/kale.png" alt="kale">
+            </div>
+            <div>
+              <img src="../app/assets/stairs.png" alt="stairs">
+            </div>
+          </div>
+        </div>
+        <div id="trecias" class="tab">
+          <!-- <h2>Trecias</h2> -->
+          <div class="text">
+            <h2>Tabs with soft transitioning effect. Explained propiety of out perpetual his you.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quisquam eius facilis, error ab dolorum unde,
+              officia repudiandae odit assumenda totam reprehenderit eveniet iusto consectetur perferendis dicta fugit?
+              Consequatur, esse.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit ratione dolorem veniam assumenda aperiam ab.</p>
+          </div>
+          <div class="images">
+            <div>
+              <img src="../app/assets/salad.png" alt="salad">
+              <img src="../app/assets/kale.png" alt="kale">
+            </div>
+            <div>
+              <img src="../app/assets/stairs.png" alt="stairs">
+            </div>
+          </div>
+        </div>
+  </section>
+  <section class="about-1">
+    <div class="image">
+      <img src="../app/assets/cheshire-county-hygiene-services.svg" alt="">
+    </div>
+    <div class="text">
+      <h2>Erat tempor tempus erat malesuada</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit exercitationem dolore quaerat doloribus obcaecati, unde ab dolorum dolorem eos maxime facere quas quod, consequuntur explicabo aut vero, non nam ratione!</p>
+      <div class="title">
+        <div class="round-box"><i class="fa-regular fa-eye" style="color: white"></i></div>
+        <div>
+          <h3>Title</h3>
+          <p>Lorem tempora tempore at nobis aliquid mollitia enim repudiandae maxime? Nam iure maiores libero eaque atque, abveniam sequi iusto.</p>
+        </div>
+      </div>
+      <div class="title">
+        <div class="round-box"><i class="fa-regular fa-comment" style="color: white"></i></div>
+        <div>
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi ratione aliquam repudiandae a eius unde, omnis dicta ut inventore illum quidem molestiae temporibus quaerat eligendi voluptas necessitatibus sed.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="about-2">
+    <h2>Why this is awesome</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <div class="awesome">
+      <div>
+        <div class="round-border"><i class="fa-solid fa-award" style="color:#e47c66"></i></div>
+        <h3>Thoughtful Design</h3>
+        <p>Lorem rem consectetur, impedit quisquam commodi quod eaque ducimus amet laudantium blanditiis.</p>
+      </div>
+      <div>
+        <div class="round-border"><i class="fa-solid fa-spa" style="color:#e47c66"></i></div>
+        <h3>Well Crafted</h3>
+        <p>Lorem dolores quis numquam veniam. Vitae, ad dolorem ducimus amet.</p>
+      </div>
+      <div>
+        <div class="round-border"><i class="fa-brands fa-cc-visa" style="color:#e47c66"></i></div>
+        <h3>Easy to Customize</h3>
+        <p>Lorem ex soluta minus incidunt nemo est nulla adipisci.</p>
+      </div>
+    </div>
+  </section>
+  <section class="pricing">
+    <br>
+    <br>
+    <h2>Pricing option</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="price">
+            <h3>Basic</h3>
+            <h2>$<span>0</span></h2>
+            <p>Free for life</p>
+          </div>
+          <div class="green-deco"></div>
+          <ul>
+            <li>1 gb of space</li>
+            <li>10gb of bandwidth</li>
+            <li>3 websites</li>
+            <li>basic customization</li>
+            <li>wordpress integration</li>
+            <li>email support</li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <div class="price">
+            <h3>Professional</h3>
+            <h2>$<span>19</span></h2>
+            <p>Monthly payment</p>
+          </div>
+          <div class="green-deco">Our most popular</div>
+          <ul>
+            <li>5 gb of space</li>
+            <li>50gb of bandwidth</li>
+            <li>12 websites</li>
+            <li>advanced customization</li>
+            <li>wordpress integration</li>
+            <li>email support</li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <div class="price">
+            <h3>Enterprise</h3>
+            <h2>$<span>70</span></h2>
+            <p>Monthly payment</p>
+          </div>
+          <div class="green-deco"></div>
+          <ul>
+            <li>unlimited space</li>
+            <li>unlimited bandwidth</li>
+            <li>100 websites</li>
+            <li>advanced customization</li>
+            <li>wordpress integration</li>
+            <li>24/7 customer support</li>
+          </ul>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+  <section class="reviews">
+    <br>
+    <br>
+    <h2>What our customers are saying</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="avatar"></div>
+          <div class="comments">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio corrupti, doloremque ipsa eos
+          neque optio, officia aliquid qui autem maxime architecto, quibusdam nihil! Unde reprehenderit totam quaerat.
+          Corporis, accusamus vitae.</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="avatar"></div>
+          <div class="comments">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio corrupti, doloremque ipsa
+            eos
+            neque optio, officia aliquid qui autem maxime architecto, quibusdam nihil! Unde reprehenderit totam quaerat.
+            Corporis, accusamus vitae.</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="avatar"></div>
+          <div class="comments">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio corrupti, doloremque ipsa
+            eos
+            neque optio, officia aliquid qui autem maxime architecto, quibusdam nihil! Unde reprehenderit totam quaerat.
+            Corporis, accusamus vitae.</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="avatar"></div>
+          <div class="comments">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio corrupti, doloremque ipsa
+            eos
+            neque optio, officia aliquid qui autem maxime architecto, quibusdam nihil! Unde reprehenderit totam quaerat.
+            Corporis, accusamus vitae.</div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+  <section class="contact">
+    <br><br>
+    <h2>Contact us</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <form action="#">
+      <input type="text" name="name" placeholder="First name">
+      <input type="text" name="surname" placeholder="Last name">
+      <input type="text" name="phone" placeholder="Phone number">
+      <div class="radio-inputs">
+        <div class="radio-input">
+          <input type="radio" name="contacts" value="personal">
+          <label for="personal">Personal</label>
+        </div>
+        <div class="radio-input">
+          <input type="radio" name="contacts" value="company">
+          <label for="company">Company</label>
+        </div>
+      </div>
+      <button>Send</button>
+    </form>
+  </section>
+  <footer>
+    <div>
+      <a href=""><img src="app/assets/footer-facebook.svg" alt="facebook"></a>
+      <a href=""><img src="app/assets/footer-instagram.svg" alt="instagram"></a>
+      <a href=""><img src="app/assets/footer-twitter.svg" alt="twitter"></a>
+      <a href=""><img src="app/assets/footer-pinterest.svg" alt="pinterest"></a>
+      <a href=""><img src="app/assets/footer-twitter.svg" alt="wifi?"></a>
+    </div>
+    <span>© 2019 Cheshire County</span>
+  </footer>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
