@@ -1,8 +1,17 @@
 "use strict";
-        
+
+var links = document.getElementsByClassName("links");
+for (var x of links) {
+    x.addEventListener("click", function () {
+        for (var x of links) {
+            x.style.color = "white";
+        } this.style.color = "#e27866";
+                });
+            }
+
 function changeHeader(event, name) {
     var tabs = document.querySelectorAll(".tab");
-    var buttons = document.querySelectorAll("button");
+    var buttons = document.getElementsByClassName("tabBtn");
 
     for(var i = 0; i < tabs.length; i++){
         tabs[i].style.display = "none";
@@ -24,26 +33,29 @@ function changeHeader(event, name) {
 }
 
 const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-      600: {
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        800: {
           slidesPerView: 2,
           slidesPerGroup: 1,
           spaceBetween: 20,
           allowSlideeNext: true,
           allowSlideePrev: true
-      },
-      1000: {
+        },
+        1000: {
           slidesPerView: 3,
           slidesPerGroup: 3,
           spaceBetween: 20,
           allowSlideeNext: false,
           allowSlideePrev: false
-      }
-  }
+        }
+    }
 });

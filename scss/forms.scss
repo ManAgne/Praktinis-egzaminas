@@ -1,0 +1,358 @@
+.get-started {
+  background: url(../assets/city.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+  min-height: 640px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(46, 46, 46);
+    opacity: 0.6;    
+  }
+
+  .download {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 75px;
+    margin-left: 7.5%;
+    flex: 1 1 60%;
+    color: white;
+    height: 424px;
+    z-index: 1;
+
+    img {
+      height: 105px;
+      width: 246px;
+    }
+
+    h1 {
+      width: 426px;
+      font-size: 2.2em;
+    }
+    
+    p {
+      max-width: 800px;
+      font-size: 1em;
+      margin-right: 10px;    
+    }
+    
+
+    button {
+      background: none;
+      border: 2px solid white;
+      text-transform: uppercase;
+      font-size: 0.9em;   
+      font-weight: bold;
+      color: white;
+      height: 42px;
+      width: 135px;
+      transition: 0.3s;
+
+      &:hover {
+        background: white;
+        color: rgb(46, 46, 46);
+      }
+    }
+  }
+  
+  form {
+    margin: 120px auto;
+    margin-top: 75px;
+    margin-right: 7%;
+    background: white;
+    height: 424px;
+    flex: 1 1 20%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+
+    span {
+      font-weight: bold;
+      line-height: 50px;
+      margin-left: 50px;
+      margin-top: 10px;
+    }
+
+    h2 {
+      background: #f5f5f5;
+      line-height: 55px;
+      text-align: center;
+      font-size: 1.3em;
+      border-radius: 5px 5px 0 0;
+
+      span {
+        text-transform: uppercase;
+        color: #e47c66;
+        margin-left: 0;
+      }
+
+    }
+
+    input[type="text"]{
+      width: 75%;
+      line-height: 40px;
+      margin: auto;
+      border: none;
+      border-bottom: 1px solid #ededec;
+      margin-left: 50px;
+      
+      &::placeholder{
+        color: #ededec;
+      }
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+
+    .radio-inputs {
+      margin: 10px 50px;
+      display: flex;
+      color: black;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.7em;
+      }
+
+    .radio-input {
+      display: flex;
+      margin-bottom: 30px;
+
+      input {
+        margin-right: 5px;
+      }
+
+      label {
+        margin-right: 20px;
+      }
+
+      }
+
+    input[type="radio"]{
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #41d39663;
+      position: relative;
+      border-radius: 50%;
+    }
+
+    input[type="radio"],
+    input[type="radio"] + label {
+    cursor: pointer;
+    }
+
+    input[type="radio"]:before {
+      position: absolute;
+      top: 1.5px;
+      left: 1.5px;
+      content: "";
+      width: 10%;
+      height: 10%;
+      background: #41d395;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: 0.3s;
+    }
+
+    input[type="radio"]:checked:before {
+      transform: scale(1);
+      border: 2px solid #41d395;
+    }
+
+    input[type="radio"]:checked {
+      border: 2px solid #41d395;
+    }
+
+    button {
+      line-height: 55px;
+      width: 100%;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      background: #41d395;
+      border: none;
+      border-radius: 0 0 5px 5px;
+      transition: 0.3s;
+      margin: 0;
+
+      &:hover {
+        background: #41d396b7;
+      }
+    }
+  }
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  min-height: 105px;
+ 
+  p {
+    color: grey;
+  }
+
+  div {
+    width: 50%;
+
+    &:nth-of-type(1){
+      margin-left: 8%;
+    }
+
+    &:nth-of-type(2){
+      display: flex;
+      justify-content: space-around;
+      margin-right: 5%;
+
+    }
+
+  }
+}
+
+.contact {
+  width: 100%;
+  min-height: 573px;
+  background:#e47c66;
+  text-align: center;
+  position: relative;
+
+  h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 100px;
+  }
+
+  p {
+    color: white;
+    line-height: 50px;
+    font-size: 1em;
+  }
+
+  form {
+    margin: 20px auto;
+    background: white;
+    height: 314px;
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+
+    input[type="text"]{
+      width: 75%;
+      line-height: 40px;
+      margin: auto;
+      border: none;
+      border-bottom: 1px solid #e2e2e0;
+      margin-left: 50px;
+      
+      &::placeholder{
+        color: #ededec;
+      }
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+
+    .radio-inputs {
+      margin: 20px 50px;
+      margin-bottom: -10px;
+      display: flex;
+      color: black;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.7em;
+      }
+
+    .radio-input {
+      display: flex;
+      margin-bottom: 30px;
+
+      input {
+        margin-right: 5px;
+      }
+
+      label {
+        margin-right: 20px;
+      }
+
+      }
+
+    input[type="radio"]{
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #41d39663;
+      position: relative;
+      border-radius: 50%;
+    }
+
+    input[type="radio"],
+    input[type="radio"] + label {
+    cursor: pointer;
+    }
+
+    input[type="radio"]:before {
+      position: absolute;
+      top: 1.5px;
+      left: 1.5px;
+      content: "";
+      width: 10%;
+      height: 10%;
+      background: #41d395;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: 0.3s;
+    }
+
+    input[type="radio"]:checked:before {
+      transform: scale(1);
+      border: 2px solid #41d395;
+    }
+
+    input[type="radio"]:checked {
+      border: 2px solid #41d395;
+    }
+
+    button {
+      height: 48px;
+      width: 40%;
+      font-size: 0.9em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      background: #41d395;
+      margin: 20px auto;
+      border: none;
+      border-radius: 5px;
+      transition: 0.3s;
+
+      &:hover {
+        background: #41d396b7;
+      }
+    }
+  }
+
+}

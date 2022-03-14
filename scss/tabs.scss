@@ -1,0 +1,107 @@
+.tabs {
+    display: flex;
+    position: relative;
+    min-height: 640px;
+    width: 100%;
+    background: url(/app/assets/mountains.png);
+    background-size: cover;
+    background-position: center;
+
+    &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(226,120,102,1) 0%, rgba(100,148,227,1) 100%);
+    opacity: 0.4;    
+  }
+}
+
+.buttons {
+    z-index: 1;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 20px 0px;
+    background: #a37169;
+    color: rgba(255, 255, 255, 0.658);
+    font-size: 0.8em;
+    text-transform: uppercase; 
+    border: none;  
+    margin: 20px;
+    transition: 0.3s;
+
+}
+
+button > span {
+    transform: rotate(-45deg);
+}
+
+button:hover {
+    cursor: pointer;
+    background: #e27866;
+    color: white;
+}
+
+.selected {
+    background-color: #e27866;
+    color: white;
+}
+
+.tab {
+    margin: 15px;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: 0.5s;
+    display: flex;
+}
+
+
+.text {
+    width: 75%;
+    margin: 0 80px;
+    margin-top: 110px;
+    color: white;
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+}
+
+.images {
+    display: flex;
+    margin: 40px 80px;
+
+}
+
+.tab p {
+    text-align: justify;
+}
+
+.tab img {
+    width: 168px;
+    height: 168px;
+    object-fit: cover;
+}
+
+.tabAnimation{
+    transform: translateX(0);
+    opacity: 1;
+}
+
