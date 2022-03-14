@@ -30,9 +30,9 @@
     <form>
       <h2>Try Your <span>free</span> Trial Today</h2>
       <span>Your details</span>
-      <input type="text" name="name" placeholder="First name">
-      <input type="text" name="surname" placeholder="Last name">
-      <input type="text" name="phone" placeholder="Phone number">
+      <input type="text" name="name" placeholder="First name" required>
+      <input type="text" name="surname" placeholder="Last name" required>
+      <input type="text" name="phone" placeholder="Phone number" required>
       <span>Type of subscription</span>
       <div class="radio-inputs">
         <div class="radio-input">
@@ -60,7 +60,7 @@
       <a href=""><img src="app/assets/twitter.svg" alt="wifi?"></a>
     </div>
   </section>
-  <section id="tabs">
+  <section class="tabs">
         <div class="buttons">
           <button onclick="changeHeader(event, `pirmas`)"><span>Register</span></button>
           <button onclick="changeHeader(event, `antras`)"><span>Apply</span></button>
@@ -235,33 +235,35 @@
     <h2>What our customers are saying</h2>
     <div class="swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div class="swiper-slide1 swiper-slide2">
           <div class="avatar"></div>
-          <div class="comments">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio corrupti, doloremque ipsa eos
-          neque optio, officia aliquid qui autem maxime architecto, quibusdam nihil! Unde reprehenderit totam quaerat.
-          Corporis, accusamus vitae.</div>
+          <div class="comments">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio corrupti, doloremque ipsa eos.</p>
+            </div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide1 swiper-slide2">
+          <div class="comments">
+            <p>Lorem officia aliquid qui autem maxime architecto, quibusdam nihil! Unde reprehenderit totam quaerat.
+            Corporis, accusamus vitae.</p>
+            </div>
           <div class="avatar"></div>
+        </div>
+        <div class="swiper-slide1 swiper-slide2">
+          <div class="comments">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio corrupti, doloremque ipsa
+            eos
+            neque optio, officia aliquid qui autem maxime architecto, quibusdam nihil! Unde reprehenderit totam quaerat.
+            Corporis, accusamus vitae.</p>
+            </div>
+          <div class="avatar"></div>
+        </div>
+        <div class="swiper-slide1 swiper-slide2">
           <div class="comments">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio corrupti, doloremque ipsa
             eos
             neque optio, officia aliquid qui autem maxime architecto, quibusdam nihil! Unde reprehenderit totam quaerat.
             Corporis, accusamus vitae.</div>
         </div>
-        <div class="swiper-slide">
-          <div class="avatar"></div>
-          <div class="comments">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio corrupti, doloremque ipsa
-            eos
-            neque optio, officia aliquid qui autem maxime architecto, quibusdam nihil! Unde reprehenderit totam quaerat.
-            Corporis, accusamus vitae.</div>
-        </div>
-        <div class="swiper-slide">
-          <div class="avatar"></div>
-          <div class="comments">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio corrupti, doloremque ipsa
-            eos
-            neque optio, officia aliquid qui autem maxime architecto, quibusdam nihil! Unde reprehenderit totam quaerat.
-            Corporis, accusamus vitae.</div>
-        </div>
+        <div class="avatar"></div>
       </div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
@@ -271,10 +273,10 @@
     <br><br>
     <h2>Contact us</h2>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-    <form action="#">
-      <input type="text" name="name" placeholder="First name">
-      <input type="text" name="surname" placeholder="Last name">
-      <input type="text" name="phone" placeholder="Phone number">
+    <form method="get">
+      <input type="text" name="name" placeholder="First name" required>
+      <input type="text" name="surname" placeholder="Last name" required>
+      <input type="text" name="phone" placeholder="Phone number" required>
       <div class="radio-inputs">
         <div class="radio-input">
           <input type="radio" name="contacts" value="personal">
