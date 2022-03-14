@@ -1,0 +1,100 @@
+@media (min-width: 1000px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    nav {
+        img {
+            margin: 5%;
+        }
+
+        div {
+            margin: 0;
+
+            a {
+                font-size: 0.7em;
+                padding: 10px;
+            }
+        }
+    }
+
+    .about-1 {
+        flex-wrap: wrap;
+
+        .image {
+            width: 100%;
+
+            img {
+                height: 150px;
+                margin: 75px 20%;
+            }            
+        }
+
+        .text {
+            margin-bottom: 50px;
+        }
+    }
+
+    .social-media {
+        margin: 10px auto;
+    }
+
+    .awesome {
+        flex-wrap: wrap;
+
+        .awesome-wrap {
+            min-width: 400px;
+        }
+    }
+
+    .get-started {
+        flex-wrap: wrap;
+
+        .download {
+            margin: 10% 10%;
+
+            button {
+                margin-top: 10%;
+                margin-bottom: -5%;
+            }
+        }
+
+        form {
+            margin: 5% 20%;
+        }
+
+    }
+}
+
+@media (max-width: 900px) {
+
+    .tabs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons {
+    z-index: 1;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    margin-bottom: -10%;
+    }
+
+    .tab {
+        margin: 10px;
+        margin-right: -5%;
+    }
+
+    .green-deco {
+        line-height: 40px;
+        color: white;
+        font-size: 0.4em;
+        transition: none;
+    }
+
+}

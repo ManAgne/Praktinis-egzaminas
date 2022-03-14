@@ -1,0 +1,85 @@
+.reviews{
+  min-height: 600px;
+  position: relative;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 50px auto;
+  }
+
+  .swiper {
+    max-width: 1200px;
+    margin-top: 20px auto;
+    position: relative;
+
+    .swiper-wrapper {
+      display: flex;
+      align-items: flex-end;
+      justify-items: center;
+
+      .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      background: white;
+      border-radius: 5px;
+      font-size: 0.9em;
+      margin: 50px auto;
+
+      .comments {
+        background: #6494e3;
+        color: white;
+        width: 250px;
+        font-size: 1em;
+        line-height: 20px;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+
+        &:before {
+          position: absolute;
+          content: "";
+          border: 15px solid transparent;
+          border-right-color: #6494e3;
+          bottom: 65px;
+          left: 32%;
+          transform: rotate(-90deg);
+        }
+      }
+
+      .reviewer {
+        display: flex;
+        align-items: center;
+        margin-left: -100px;
+
+        h4 {
+          font-size: 1.2em;
+          margin: auto 15px;
+          font-weight: lighter;
+          max-width: 200px;
+        }
+
+        h5 {
+          font-size: 0.8em;
+          margin: auto 15px;
+          font-weight: lighter;
+          color: #474747;
+          max-width: 200px;
+        }
+      
+      }
+    }
+    }
+      
+
+  }
+
+  // .swiper-pagination-bullet {
+  //   color: red;
+  // }
+}
